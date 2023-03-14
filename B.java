@@ -276,7 +276,7 @@ public class B {
     int[] a = null;
     if (iters > 0) a = new int[iters];
     for (int i = 0; i < iters; ++i)
-      a[i] = 0; // NPE - false positive
+      a[i] = 0;
 
     if (iters > 0) {
       String last = null;
@@ -289,7 +289,7 @@ public class B {
       throw new RuntimeException();
     }
     for (int i = 0; i < iters; ++i) {
-      b[i] = 0; // NPE - false positive
+      b[i] = 0;
     }
   }
 

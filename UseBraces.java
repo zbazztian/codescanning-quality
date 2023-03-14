@@ -158,7 +158,7 @@ class UseBraces
 		else 
 			if (false)
 				f();
-			g();	// false negative
+			g();
 
 		if( true )
 			;
